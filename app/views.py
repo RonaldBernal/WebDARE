@@ -21,3 +21,7 @@ def makeawish(request):
 	bulk_data = request.POST
 	print bulk_data
 	return HttpResponse(bulk_data)
+
+#Google Verification
+def google(request):
+	return render(request, 'google74b8934454bd29ba.html', {})

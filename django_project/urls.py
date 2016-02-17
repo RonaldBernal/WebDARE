@@ -25,9 +25,9 @@ urlpatterns = [
     url(r'^$', landing, name ='landing'),
     url(r'^promos$', promos, name = 'promos'),
     url(r'^wishes$', wishes, name = 'wishes'),
-    url(r'^make-wish/$', makeawish, name = 'MakeAWish'),
+    url(r'^make-wish$', makeawish, name = 'MakeAWish'),
     url(r'^admin/', admin.site.urls),
-
+    url(r'^google74b8934454bd29ba.html$', google, name = 'Google Verification')
 ]
 
 #if settings.DEBUG:
