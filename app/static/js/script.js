@@ -15,6 +15,11 @@ $(window).load(function() {
 })
 
 $(document).ready(function() {
+		//animated logo
+		$(".navbar-brand").hover(function () {
+			$(this).toggleClass("animated shake");
+		});
+		
 		//animated scroll_arrow
 		$(".img_scroll").hover(function () {
 			$(this).toggleClass("animated infinite bounce");
@@ -62,5 +67,5 @@ $(document).ready(function() {
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+	$('.navbar-toggle:visible').click();
 });
