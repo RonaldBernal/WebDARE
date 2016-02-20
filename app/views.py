@@ -21,3 +21,9 @@ def makeawish(request):
 	bulk_data = request.POST
 	print bulk_data
 	return HttpResponse(bulk_data)
+
+def robots(request):
+	return render(request, 'info/robots.txt', {})
+
+def sitemap(request):
+	return render(request, 'info/sitemap.xml', {})

@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^i^8*jh&4s9*!p=e)f6k%(n86$#pxco#1^0q8+g&o5+8subu(7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['darexperiencias.site', 'www.darexperiencias.site']
 
 
 # Application definition

@@ -27,7 +27,12 @@ urlpatterns = [
     url(r'^wishes$', wishes, name = 'wishes'),
     url(r'^make-wish$', makeawish, name = 'MakeAWish'),
     url(r'^admin/', admin.site.urls),
-    #url(r'^google74b8934454bd29ba.html$', google, name = 'Google Verification')
+
+    #info and verification
+    url(r'^robots.txt$', robots, name = 'robots.txt'),
+    url(r'^sitemap$', sitemap, name = 'sitemap'),
+    #url(r'^google74b8934454bd29ba.html$', google, name = 'Google Verification'),
+    #url(r'^BingSiteAuth.xml$', bing, name = 'Bing Verification'),
 ]
 
 #if settings.DEBUG:

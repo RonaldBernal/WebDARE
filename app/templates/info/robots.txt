@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /
+
+User-Agent: Googlebot
+Allow: /darexperiencias.site
+
+User-Agent: Googlebot-Mobile
+Allow: /darexperiencias.site
+
+User-Agent: Googlebot-Image
+Allow: /darexperiencias.site
+
+User-Agent: Mediapartners-Google
+Allow: /darexperiencias.site
+
+User-Agent: Adsbot-Google
+Allow: /darexperiencias.site
