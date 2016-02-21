@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="google-site-verification" content="YtjXPn6STDI3ruE0XFKAr2PO_k4RPTiF2S3gT-zcPHs" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="DARE, Experiencias para adultos mayores, Dar Experiencias, Actividades, Adultos, Adultos Mayores, Experiencias, Convivencia, Familia">
 	<meta name="description" content="DARE, Dar Experiencias. El generador de Experiencias para adultos mayores.">
 	<meta name="author" content="Ronald Bernal using FlatFy Theme by Andrea Galanti">
 	<link href="http://darexperiencias.site" hreflang="es-mx" rel="alternate" title="{{title}}" type="text/html"/>
@@ -53,7 +54,7 @@
 	<div class="container-fluid intro-header">
 		<div class="row">
 			<div class="col-md-11 col-md-offset-1 text-left abcen1 visible-lg visible-md">
-				<img class="wow fadeIn" src="{% static "img/icon/logo4.jpg" %}" style="width:45%" data-wow-delay="0.4s"> 
+				<img id="_logo4" itemprop="logo" class="wow fadeIn" src="{% static "img/icon/logo4.png" %}" style="width:45%" data-wow-delay="0.4s"> 
 				<h2 class="h2_home wow fadeIn" style="color:#567798; text-shadow: 2px 1px 5px #000000;" data-wow-delay="0.6s">
 					Dar Experiencias
 				</h2>
@@ -107,12 +108,12 @@
 
 	
 		<!-- What is -->
-		<div id="whatis" class="content-section-b" style="border-top: 0; height:100%;">
+		<div itemprop="brand" itemscope itemtype="http://schema.org/Brand" itemref="_logo4" id="whatis" class="content-section-b" style="border-top: 0; height:100%;">
 			<div class="container">
 				<div class="col-md-6 col-md-offset-3 text-center wrap_title visible-lg visible-md">
 					<br>
 					<br>
-					<h2>Qué es DARE?</h2>
+					<h2>Qué es <span itemprop="name">DARE</span>?</h2>
 				</div>
 
 				<div class="row visible-lg visible-md">
@@ -175,12 +176,13 @@
 					</div>
 					
 					<div class="col-md-6 col-sm-12">   
-						<h3 class="section-heading">Generador de Experiencias</h3>
+						<h3 itemscope itemtype="http://schema.org/Product" itemref="whatis _offers5 _description10" class="section-heading">Generador de <span id="_name9" itemprop="name">Experiencias</span></h3>
 						<div class="sub-title lead3">
 							Una experiencia siempre memorable. 
 						</div>
 						<p class="lead">
-							Elige entre la variedad de experiencias únicas e innovadoras desarrolladas especialmente para compartir con tu familiar o amigo de la tercera edad y tener una convivencia de calidad que se convierta en un momento especial e inolvidable para ambos.
+							Elige entre la variedad de experiencias <span id="_description10" itemprop="description">únicas e innovadoras</span> desarrolladas especialmente <span itemscope itemtype="http://schema.org/Product" itemref="whatis _offers5 _name9">
+							<span itemprop="description">para compartir con tu familiar o amigo de la tercera edad </span></span> y tener una convivencia de calidad que se convierta en un momento especial e inolvidable para ambos.
 						</p>
 					</div>   
 				</div>
@@ -290,13 +292,15 @@
 			</div>
 		</div>
 		
-		<div id="download" class="content-section-c" style="height:100%">
+		<div itemscope itemtype="http://schema.org/Product" itemref="whatis" id="download" class="content-section-c" style="height:100%">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12 text-center wrap_title white">
 						<br><br>
 						<h2 style="text-shadow: 2px 1px 5px #000000;">
-							Descarga la App Gratis!
+							Descarga la <span itemprop="name">App</span> 
+							<span id="_offers5" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							<span itemprop="price">Gratis</span></span>!
 							<br>
 							<br>
 						</h2>
@@ -323,7 +327,7 @@
 					</div>
 				</div>  
 			</div>
-		</div>  
+		<meta itemprop="description" content="Disponible para Android y iOS"></div>  
 		
 		<!-- Team -->
 		<div id="team" class="content-section-a section-timeline">
