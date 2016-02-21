@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from app.models import *
 
 def landing(request):
-	return render(request, 'index.min.html', {"title": "DARE, Dar Experiencias"})
+	return render(request, 'index.html', {"title": "DARE, Dar Experiencias"})
 
 def promos(request):
 	return JsonResponse(dict(Promos=list(Promos.objects.values('title', 'short_desc', 'long_desc', 'location', 'contact', 'image_url', 'price'))))

@@ -25,7 +25,7 @@ SECRET_KEY = '^i^8*jh&4s9*!p=e)f6k%(n86$#pxco#1^0q8+g&o5+8subu(7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['darexperiencias.site', 'www.darexperiencias.site']
+ALLOWED_HOSTS = ['darexperiencias.site', 'www.darexperiencias.site', 'localhost']
 
 
 # Application definition
